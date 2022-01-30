@@ -1,0 +1,487 @@
+#include<iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+
+	/*int a;
+	cin >> a;
+	if (a > 0) 
+	{
+		cout << "Positiv" << endl;
+	}
+	else
+		if (a == 0)
+			cout << 0 << endl;
+		else
+			cout << "Negative" << endl;*/
+
+	/*int a, b, c, max;
+	cin >> a >> b >> c;
+	if (a > b && a > c)
+	{
+		cout << a << endl;
+	}
+	else
+	{
+		if (b > c)
+		{
+			cout << b << endl;
+		}
+		else
+		{
+			cout << c << endl;
+		}
+	}
+	max = (a > b && a > c) ? a : (b > c) ? b : c;*/
+
+	/*double d = 5.1;
+	char n;
+	cin >> n;
+	switch (n)
+	{
+	case '1':
+		cout << "Mo" << endl;
+		break;
+	case 2:
+		cout << "Tu" << endl;
+		break;
+	case 3:
+		cout << "We" << endl;
+		break;
+	default:
+		cout << "ERROR" << endl;
+		break;
+	}*/
+
+	/*int a, b, max;
+	if (a > b)
+	{
+		max = a;
+	}
+	else
+	{
+		max = b;
+	}
+	
+	(a > b) ? max = a : max = b;
+	max = (a > b) ? a : b;*/
+
+	/*if (n == 1)
+	{
+		cout << "Mo" << endl;
+	}
+	else
+	{
+		if (n == 2)
+		{
+			cout << "Tu";
+		}
+		else
+		{
+			if (n == 3)
+			{
+				cout << "We"
+			}
+		}
+	}*/
+
+	/*int a = 5;
+	while (a < 6)
+	{
+		cout << a << " ";
+		a--;
+	}*/
+
+	/*int a, b, i = 0;
+	cin >> a >> b;
+	while (a >= b)
+	{
+		a -= b;
+		i++;
+	}
+	cout << i << endl;*/
+
+	/*int n, S = 0;
+	cin >> n;
+	while (n > 0) 
+	{
+		S++;
+		n /= 10;
+	}
+	cout << S << endl;*/
+	
+	/*int a, s = 0;
+	do 
+	{
+		cin >> a;
+		s += a;
+	} while (a != 0);
+	cout << s << endl;*/
+
+
+	/*int a, s = 0;
+	cin >> a;
+	s += a;
+	while (a != 0)
+	{
+		cin >> a;
+		s += a;
+	} 
+	cout << s << endl;*/
+
+	/*int n;
+	cin >> n;
+	for (int i = 1; i <= 10; i++)
+	{
+		cout << i << " x " << n << " = " << i * n << endl;
+	}*/
+
+
+	/*int n, h, s = 0;
+	cout << "Êîë-âî øêîë : ";
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+	{
+		cout << "Ââåäèòå êîë-âî ó÷åíèêîâ â " << i << "-îé øêîëå : ";
+		cin >> h;
+		if (h > 1000)
+			s++;
+	}
+	cout << "Âñåãî : " << s << " øêîë" << endl;*/
+
+	/*int c = 0;
+	for (int i = 1; i < 50000; i++)
+	{
+		int n5 = i % 10;
+		int n4 = i / 10 % 10;
+		int n3 = i / 100 % 10;
+		int n2 = i / 1000 % 10;
+		int n1 = i / 10000 % 10;
+		if (n1 == 4 || n2 == 4 || n3 == 4 || n4 == 4 || n5 == 4 || n1 == 1 && n2 == 3 || n2 == 1
+			&& n3 == 3 || n3 == 1 && n4 == 3 || n4 == 1 && n5 == 3)
+			c++;
+	}
+	cout << c << endl;*/
+
+	/*for (size_t i = 0; i <= 20; i++)
+	{
+		if(i % 2 == 1)
+			continue;
+		cout << i << " ";
+	}*/
+	
+	/*int a;
+	do {
+		cin >> a;
+	} while (a > 10 || a < 0);
+	cout << a << endl;*/
+
+	/*int c = 0;
+	for (size_t h = 0; h < 24; h++)
+	{
+		for (size_t m = 0; m < 60; m++)
+		{
+			for (size_t s = 0; s < 60; s++)
+			{
+				int h1 = h / 10;
+				int h2 = h % 10;
+				int m1 = m / 10;
+				int m2 = m % 10;
+				int s1 = s / 10;
+				int s2 = s % 10;
+				if (h1 == s2 && h2 == s1 && m1 == m2)
+				{
+					cout << h1 << h2 << ":" << m1 << m2 << ":" << s1 << s2 << endl;
+					c++;
+				}
+			}
+			
+		}
+	}
+	cout << c << endl;*/
+
+	
+	/*int n;
+	cin >> n;
+	for (size_t k = 0; k < 3; k++)
+	{
+		for (size_t j = 0; j < n; j++)
+		{
+			for (size_t i = 0; i < n - 1 - j + 2-k; i++)
+			{
+				cout << " ";
+			}
+			for (size_t i = 0; i < 2 * j + 1 + 2*k; i++)
+			{
+				cout << "*";
+			}
+			cout << endl;
+		}
+	}*/
+	
+	/*int t = 0;
+	for (size_t i = 10000; i <= 99999; i++)
+	{
+		int c = 0, m = i;
+		while (m > 0)
+		{
+			int r = m % 10;
+			if (r == 5)
+				c++;
+			m /= 10;
+		}
+		if (c == 3 && i % 9 == 0)
+		{
+			cout << i << " ";
+			t++;
+		}
+	}
+	cout << endl << t << endl;*/
+	
+
+	/*int n;
+	cin >> n;
+	for (size_t i = pow(10, n-1); i < pow(10, n); i++)
+	{
+		int m = i, s = 0;
+		while (m > 0)
+		{
+			s += pow(m % 10, n);
+			m /= 10;
+		}
+		if (s == i)
+			cout << i << endl;
+	}*/
+
+	//type name[count];
+	
+	
+
+	srand(time(0));
+
+	/*const int n = 10;
+	int a[n], b[n];
+	int s = 0;
+	int minD = 0, maxD = 10;
+	for (size_t i = 0; i < n; i++)
+	{
+		a[i] = rand() % (maxD - minD + 1) + minD;
+	}
+	for (size_t i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	int c = 0;
+	for (size_t i = 0; i < n; i++)
+	{
+		if (a[i] % 2 == 0)
+			b[c++] = a[i];
+	}
+	for (size_t i = 0; i < c; i++)
+	{
+		cout << b[i] << " ";
+	}
+	cout << endl;*/
+
+
+	/*for (size_t i = 0; i < n-1; i++)
+	{
+		for (size_t j = 0; j < n-1-i; j++)
+		{
+			if (a[j] < a[j + 1])
+			{
+				int t = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = t;
+			}
+		}
+	}*/
+	/*for (size_t i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;*/
+	/*int t = a[0];
+	a[0] = a[9];
+	a[9] = t;
+	swap(a[0], a[9]);
+	///
+	for (size_t i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;*/
+
+
+
+	/*int max = a[0], imax = 0, min = a[0], imin = 0;
+	for (size_t i = 0; i < n; i++)
+	{
+		if (a[i] > max)
+		{
+			max = a[i];
+			imax = i;
+		}
+		if (a[i] < min)
+		{
+			min = a[i];
+			imin = i;
+		}
+	}
+	cout << imin << endl;
+	cout << imax << endl;
+	int begin = (imin < imax) ? imin : imax;
+	int end = (imin > imax) ? imin : imax;
+	for (size_t i = begin + 1; i < end; i++)
+	{
+		s += a[i];
+	}
+	cout << s << endl;*/
+
+	/*cout << max << endl;
+	cout << imax << endl;*/
+
+	/*for (size_t i = 0; i < n; i++)
+	{
+		s+=a[i];
+	}
+	cout << s << endl;*/
+
+	/*for (size_t i = 0; i < n; i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;*/
+
+
+	const int row = 5, col = 6;
+	int a[row][col];
+	int sumRow[row] = {0};
+	int sumCol[col] = {0};
+	for (size_t i = 0; i < row; i++)
+	{
+		for (size_t j = 0; j < col; j++)
+		{
+			a[i][j] = rand() % 10;
+			sumRow[i] += a[i][j];
+		}
+	}
+
+	for (size_t i = 0; i < row; i++)
+	{
+		int s = 0;
+		for (size_t j = 0; j < col; j++)
+		{
+			cout << setw(3) << a[i][j];
+		}
+		cout << " | " << sumRow[i];
+		cout << endl;
+	}
+
+
+	cout << "----------------------" << endl;
+	for (size_t j = 0; j < col; j++)
+	{
+		for (size_t i = 0; i < row; i++)
+		{
+			sumCol[j] += a[i][j];
+		}
+		cout << setw(3) << sumCol[j];
+	}
+	cout << endl;
+
+
+	for (size_t i = 0; i < row-1; i++)
+	{
+		for (size_t j = 0; j < row-1-i; j++)
+		{
+			if (sumRow[j] < sumRow[j + 1])
+			{
+				swap(sumRow[j], sumRow[j + 1]);
+				for (size_t k = 0; k < col; k++)
+				{
+					swap(a[j][k], a[j+1][k]);
+				}
+			}
+		}
+	}
+
+
+	for (size_t i = 0; i < col-1; i++)
+	{
+		for (size_t j = 0; j < col-1-i; j++)
+		{
+			if (sumCol[j] < sumCol[j + 1])
+			{
+				swap(sumCol[j], sumCol[j + 1]);
+				for (size_t k = 0; k < row; k++)
+				{
+					swap(a[k][j], a[k][j+1]);
+				}
+			}
+		}
+	}
+
+
+	cout << endl;
+	for (size_t i = 0; i < row; i++)
+	{
+		int s = 0;
+		for (size_t j = 0; j < col; j++)
+		{
+			cout << setw(3) << a[i][j];
+		}
+		cout << " | " << sumRow[i];
+		cout << endl;
+	}
+
+	cout << "----------------------" << endl;
+	for (size_t j = 0; j < col; j++)
+	{
+		cout << setw(3) << sumCol[j];
+	}
+	cout << endl;
+	cout << endl;
+
+	/*const int row = 5, col = 6;
+	int a[row][col];
+	int sumRow[row] = { 0 };
+	for (size_t i = 0; i < row; i++)
+	{
+		for (size_t j = 0; j < col; j++)
+		{
+			a[i][j] = rand() % 10;
+		}
+	}
+	for (size_t i = 0; i < row; i++)
+	{
+		for (size_t j = 0; j < col; j++)
+		{
+			cout << setw(3) << a[i][j];
+		}
+		cout << endl;
+	}
+	for (size_t i = 0; i < row; i++)
+	{
+		int t = a[i][0];
+		a[i][0] = a[i][col-1];
+		a[i][col - 1] = t;
+	}
+	cout << endl;
+	for (size_t i = 0; i < row; i++)
+	{
+		for (size_t j = 0; j < col; j++)
+		{
+			cout << setw(3) << a[i][j];
+		}
+		cout << endl;
+	}*/
+
+
+	system("pause");
+}
